@@ -21,29 +21,29 @@ $(document).ready(function() {
     });
 
     // GLOBAL TEST CASE FOR INPUT
-    $('#formGroupExampleInput')[0].value = 'Dzmitry'
-    $('#formGroupExampleInput2')[0].value = 'https://avatars0.githubusercontent.com/u/21366035?v=3&s=400'
-    var stuff = [];
-    for (i = 1; i <= 10; i++) {
+    // $('#formGroupExampleInput')[0].value = 'Dzmitry'
+    // $('#formGroupExampleInput2')[0].value = 'https://avatars0.githubusercontent.com/u/21366035?v=3&s=400'
+    // var stuff = [];
+    // for (i = 1; i <= 10; i++) {
 
-        var element = document.getElementsByName('question' + [i])
+    //     var element = document.getElementsByName('question' + [i])
 
-        stuff.push(element)
-    }
-    for (var i = 0; i < 10; i++) {
-        var random = Math.floor(Math.random() * 5)
-        stuff[i][random].checked = true
-    }
-    // document.getElementsByTagName('button')[1].click()
-    console.log(stuff)
+    //     stuff.push(element)
+    // }
+    // for (var i = 0; i < 10; i++) {
+    //     var random = Math.floor(Math.random() * 5)
+    //     stuff[i][random].checked = true
+    // }
+    // // document.getElementsByTagName('button')[1].click()
+    // console.log(stuff)
 
-    console.log('hello')
+    // console.log('hello')
 
 
     $('.submit').on('click', function(event) {
         $('body').css('overflow-y', ' hidden')
         var answers = []
-        console.log($('input[name]:checked').length)
+        // console.log($('input[name]:checked').length)
             // [1].value
         var a = $('#formGroupExampleInput')[0].value
         var b = $('#formGroupExampleInput2')[0].value
@@ -66,7 +66,7 @@ $(document).ready(function() {
 
         }
 
-        console.log(answers)
+        // console.log(answers)
 
 
         var NewApplicant = {
@@ -91,7 +91,7 @@ $(document).ready(function() {
                     holderDifferences.push(difference)
                         // Math.min(...arr)
                 });
-                console.log(holderDifferences)
+                // console.log(holderDifferences)
                     // console.log(holderDifferences.indexOf(Math.min(...holderDifferences)))
                     //we create array of differences between scores, then we finding the smallest number in array
                     //and defining it's index, since the index is going to match in DATA object then we can pull

@@ -1,0 +1,64 @@
+.jumbotron {
+    background-image: url("https://c2.sfdcstatic.com/content/dam/blogs/us/thumbnails/think-multimodal-it-dot-dot-dot-not-bimodal/The_benefits_of_working_in_information_technology_editor_s_choice.jpg");
+    background-size: cover;
+    opacity: 1;
+}
+
+.jumbotron {
+    width: auto;
+    margin-top: 50px;
+    font-size: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+    /* set the background image */
+    background: url(https://static.pexels.com/photos/115045/pexels-photo-115045.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    /* set the transition speed */
+    transition: 2s ease all;
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron:hover {
+    background-position: top;
+}
+
+
+/*font-family: 'Special Elite', cursive;
+font-family: 'Gochi Hand', cursive;
+font-family: 'Cherry Cream Soda', cursive;*/
+
+body {
+    font-family: 'Special Elite', cursive;
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/59/cc/83/59cc83b9cb03cb83daeb6f038b3ae11c.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    overflow-y: hidden;
+}
+
+
+/*.jumbotron:hover {
+    -webkit-animation: flash 2s;
+}*/
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}

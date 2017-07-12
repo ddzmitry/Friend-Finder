@@ -1,2 +1,2 @@
-# Friend-Finder
-Node.Js , Express, Bootstrap,JSON, Full-Stack Web App
+# fed-challange
+Node.Js , Express, CSS,HTML, JQuery Full-Stack Web App

@@ -1,52 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 
 <head>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Cherry+Cream+Soda|Gochi+Hand|Special+Elite');
-    </style>
     <meta charset="UTF-8">
-    <title>IT Match</title>
-    <link rel="shortcut icon" href="static/fav.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="static/cssformain.css">
-    <script src="static/main.js"></script>
+    <title>URBANK</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-    <div class="container">
-        <div class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills float-right">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/people">See All People</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/survey">Test</a>
-                    </li>
+<body role=document>
+
+    <div class="wrapper">
+        <header id="masthead">
+            <div class="container">
+                <a role=logo href="index.html" id="logo"><img src="static/img/urbank.png" alt=""></a>
+                <nav role=navigation>
+                    <ul>
+                        <a role=link class="singlelinks" href="#">home</a>
+                        <a role=link class="singlelinks" href="#">employee</a>
+                        <a role=link class="singlelinks" href="#">company</a>
+                        <a role=link class="singlelinks" href="#">services</a>
+                        <a role=link class="singlelinks" href="#">contact</a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="main-section">
+                <h3>Best Bank Ever!</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aut nostrum explicabo eos neque, totam fuga nisi ipsa,
+                    sint earum tempora velit, vitae facere ullam rerum placeat quidem deserunt ad.</p>
+                <strong>Reasons We're Awesome</strong>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+
+                <div class="phone">
+                    <strong>Amazing Mobile Info</strong>
+                    <p>
+                        <img class="auth-image" src="static/img/iphone.png" alt=""> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ullam voluptates voluptas, itaque nostrum quaerat consectetur. Tempore, sed possimus libero. Iusto hic
+                        velit magnam laboriosam nostrum ducimus nesciunt atque eveniet?
+                    </p>
+                </div>
+
+                <div class="tableContent">
+                    <h3>Rates| Check them out</h3>
+
+                    <table role=table-rates id="rates">
+
+
+
+                    </table>
+                </div>
+            </section>
+
+            <section class="sidebar">
+                <div id="connect">
+                    <p href="#login-box" role=button class="buttonlogin login-window">Login</p>
+
+                    <div class="tab">
+                        <button role=button class="tablinks " onclick="tabOpt(event, 'News')">News</button>
+                        <button role=button class="tablinks" onclick="tabOpt(event, 'Archive')">Archive</button>
+                    </div>
+
+                    <div id="News" class="tabcontent">
+                        <h3>News</h3>
+                        <ul>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+
+                        </ul>
+                    </div>
+
+                    <div id="Archive" class="tabcontent">
+                        <h3>Archive</h3>
+                        <a href="#">Lorem ipsum dolor sit amet</a>
+                        <a href="#">Lorem ipsum dolor sit amet</a>
+                        <a href="#">Lorem ipsum dolor sit amet</a>
+                        <a href="#">Lorem ipsum dolor sit amet</a>
+                        <a href="#">Lorem ipsum dolor sit amet</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="push"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <span>
+               &copy; Copyright 2017 URBANK
+            </span>
+            <nav role=navigation>
+                <ul>
+                    <arole=link class="singlelinks" href="#">home</a>
+                        <a role=link class="singlelinks" href="#">employee</a>
+                        <a role=link class="singlelinks" href="#">company</a>
+                        <a role=link class="singlelinks" href="#">services</a>
+                        <a role=link class="singlelinks" href="#">contact</a>
                 </ul>
             </nav>
-
         </div>
-
-        <div class="jumbotron text-center">
-            <h1 class="display-3 ">Find your match</h1>
-            <p class="lead">Take a test and find your perfect match in IT world</p>
-            <p><a class="btn btn-lg btn-success" href="/survey" role="button">Take a Test</a></p>
-        </div>
-
-
-
-
-
+    </footer>
+    <!-- Modal -->
+    <div id="login-box" class="login-popup">
+        <a href="#" role=button class="close"><img src="static/img/times.png" class="btn_close" title="Close Window" alt="Close" /></a>
+        <form method="post" class="signin" action="#">
+            <fieldset class="textbox">
+                <label class="username">
+        <span>Username</span>
+        <input role=textbox id="username" name="username" value="" type="text" autocomplete="on" placeholder="">    
+        </label>
+                <label class="password">
+        <span>Password</span>
+        <input role=textbox id="password" name="password" value="" type="password" placeholder="">
+        </label>
+                <button role=button class="submit button" type="button">Login</button>
+            </fieldset>
+        </form>
     </div>
-    <!-- /container -->
+    <!-- /.modal -->
+
+    <script src="static/script/script.js"></script>
+
+
 </body>
+
 
 </html>

@@ -1,0 +1,469 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777;
+    background: url("../images/concrete_seamless.png");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto -100px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+h1 {
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+h2,
+h3 {
+    font-size: 18px;
+}
+
+
+/* header */
+
+#masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    background-color: lightskyblue;
+    border-bottom: 2px solid #ccc;
+}
+
+#logo {
+    padding: 8px;
+    float: left;
+    height: 62px;
+}
+
+nav {
+    float: right;
+    margin-top: 5px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    height: 50px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: darkblue;
+}
+
+nav a:active {
+    background-color: darkblue;
+}
+
+nav li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+    border-left: 0 none;
+}
+
+
+/*table*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+/* footer */
+
+footer,
+.push {
+    height: 100px;
+}
+
+footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #4aaaa5;
+}
+
+footer span {
+    float: left;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    float: right;
+    width: 100%;
+    max-width: 270px;
+    padding: 6px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.buttonlogin {
+    padding-left: 39px;
+    margin-bottom: 31px;
+    margin-top: -5px;
+    background: -moz-linear-gradient(center top, purple);
+    background: -webkit-gradient(center top, purple);
+    background: -o-linear-gradient(center top, purple);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
+    border-color: #000;
+    border-width: 1px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: white;
+    background-color: purple;
+    cursor: pointer;
+    display: inline-block;
+    font: 8px;
+    width: 45%;
+    height: 30px;
+    font-size: 14px;
+}
+
+.buttonlogin:hover {
+    background: #ddd;
+}
+
+.sidebar a {
+    display: block;
+}
+
+h3,
+.sidebar h2 {
+    margin-bottom: 5px;
+}
+
+.sidebar a:last-child {
+    margin-right: 0;
+}
+
+
+/*modal styling*/
+
+#mask {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+.login-popup {
+    display: none;
+    background: white;
+    padding: 10px;
+    border: 2px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px #999;
+    /* CSS3 */
+    -moz-box-shadow: 0px 0px 20px #999;
+    /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999;
+    /* Safari, Chrome */
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    /* Firefox */
+    -webkit-border-radius: 3px;
+    /* Safari, Chrome */
+    ;
+}
+
+img.btn_close {
+    /*float: right;*/
+    margin: -28px -28px 0 0;
+}
+
+fieldset {
+    border: none;
+}
+
+form.signin .textbox label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+form.signin .textbox span {
+    display: block;
+}
+
+form.signin p,
+form.signin span {
+    color: #999;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+form.signin .textbox input {
+    background: whitesmoke;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #000;
+    border-right: 1px solid #333;
+    border-top: 1px solid #000;
+    color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font: 13px Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px;
+    width: 200px;
+}
+
+form.signin input:-moz-placeholder {
+    color: #bbb;
+    text-shadow: 0 0 2px #000;
+}
+
+form.signin input::-webkit-input-placeholder {
+    color: #bbb;
+    text-shadow: 0 0 2px #000;
+}
+
+.button {
+    float: right;
+    background: -moz-linear-gradient(center top, purple);
+    background: -webkit-gradient(center top, purple);
+    background: -o-linear-gradient(center top, purple);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
+    border-color: #000;
+    border-width: 1px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: white;
+    background-color: purple;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 6px 4px;
+    margin-top: 10px;
+    font: 15px;
+    width: 45%;
+}
+
+.button:hover {
+    background: #ddd;
+}
+
+
+/*Footer Styling*/
+
+
+/*tabs*/
+
+div.tab {
+    overflow: hidden;
+}
+
+
+/* Style the buttons inside the tab */
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+
+/* Change background color of buttons on hover */
+
+div.tab button:hover {
+    transition: 0.3s;
+    background-color: white;
+}
+
+
+/* Create an active/current tablink class */
+
+div.tab button.active {
+    border-top: 1px solid #ccc;
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* main */
+
+main {
+    padding-top: 130px;
+}
+
+.main-section {
+    line-height: 15px;
+    font-size: 10px;
+    float: left;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.phone {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+.auth-image {
+    width: 65px;
+    float: right;
+    height: auto;
+    margin-top: -61px;
+    margin-right: 25px;
+}
+
+.tableContent {
+    margin-top: 30px;
+}
+
+.tableContent tr:first-child {
+    font-weight: 600;
+}
+
+
+/*Attempt for extra credit*/
+
+@media only screen and (max-width: 980px) {
+    .container {
+        max-width: 768px;
+        padding: 0 20px;
+    }
+    main.container {
+        padding-top: 130px;
+    }
+    .main-section {
+        max-width: 420px;
+    }
+    .auth-image {
+        width: 20%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-section,
+    .sidebar {
+        max-width: 80%;
+    }
+    main {
+        overflow: auto;
+    }
+    .auth-image {
+        width: 20%;
+    }
+    .sidebar {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #masthead {
+        position: static;
+        margin-bottom: 20px;
+    }
+    header .container {
+        padding: 0;
+    }
+    main.container {
+        padding-top: 0;
+    }
+    #logo,
+    .auth-image {
+        width: 20%;
+    }
+    nav {
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+    nav a {
+        width: 30%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+}

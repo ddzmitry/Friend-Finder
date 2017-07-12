@@ -27,6 +27,7 @@ module.exports = function(app) {
         // res.json(friends)
     })
     app.post('/people/new', function(req, res) {
+        console.log('THIS IS WHAT I SEND FROM FRONT END TO THE BACK END')
         console.log(req.body)
         newApplicant = req.body
         newApplicant.scores = newApplicant.scores.map(parseFloat)
